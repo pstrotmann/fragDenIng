@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="3" failures="0" hostname="rhino" name="org.strotmann.fragDenIng.ExperteControllerSpec" tests="7" time="39.716" timestamp="2020-01-17T15:55:02">
+  <properties />
+  <testcase classname="org.strotmann.fragDenIng.ExperteControllerSpec" name="Test the index action returns the correct model" time="5.054" />
+  <testcase classname="org.strotmann.fragDenIng.ExperteControllerSpec" name="Test the create action returns the correct model" time="0.2" />
+  <testcase classname="org.strotmann.fragDenIng.ExperteControllerSpec" name="Test the save action correctly persists an instance" time="33.061">
+    <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at org.strotmann.fragDenIng.ExperteController.$tt__save(ExperteController.groovy:36)
+	at org.strotmann.fragDenIng.ExperteController.save_closure4(ExperteController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure.call(Closure.java:439)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:88)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:85)
+	at org.strotmann.fragDenIng.ExperteControllerSpec.Test the save action correctly persists an instance(ExperteControllerSpec.groovy:43)
+</error>
+  </testcase>
+  <testcase classname="org.strotmann.fragDenIng.ExperteControllerSpec" name="Test that the show action returns the correct model" time="0.119" />
+  <testcase classname="org.strotmann.fragDenIng.ExperteControllerSpec" name="Test that the edit action returns the correct model" time="0.095" />
+  <testcase classname="org.strotmann.fragDenIng.ExperteControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.562">
+    <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at org.strotmann.fragDenIng.ExperteController.$tt__update(ExperteController.groovy:73)
+	at org.strotmann.fragDenIng.ExperteController.update_closure6(ExperteController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure.call(Closure.java:439)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:88)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:85)
+	at org.strotmann.fragDenIng.ExperteControllerSpec.Test the update action performs an update on a valid domain instance(ExperteControllerSpec.groovy:109)
+</error>
+  </testcase>
+  <testcase classname="org.strotmann.fragDenIng.ExperteControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.547">
+    <error message="Invalid property &apos;partnerId&apos; of bean class [org.strotmann.fragDenIng.Experte]: Getter for property &apos;partnerId&apos; threw exception; nested exception is java.lang.reflect.InvocationTargetException" type="org.springframework.beans.InvalidPropertyException">org.springframework.beans.InvalidPropertyException: Invalid property &apos;partnerId&apos; of bean class [org.strotmann.fragDenIng.Experte]: Getter for property &apos;partnerId&apos; threw exception; nested exception is java.lang.reflect.InvocationTargetException
+	at org.springframework.beans.BeanWrapperImpl.getPropertyValue(BeanWrapperImpl.java:845)
+	at org.springframework.beans.BeanWrapperImpl.getPropertyValue(BeanWrapperImpl.java:717)
+	at org.codehaus.groovy.grails.validation.GrailsDomainClassValidator.validatePropertyWithConstraint(GrailsDomainClassValidator.java:209)
+	at org.codehaus.groovy.grails.validation.GrailsDomainClassValidator.validate(GrailsDomainClassValidator.java:79)
+	at org.codehaus.groovy.grails.validation.GrailsDomainClassValidator.validate(GrailsDomainClassValidator.java:118)
+	at org.grails.datastore.mapping.validation.ValidatingEventListener.doValidate(ValidatingEventListener.java:84)
+	at org.grails.datastore.mapping.validation.ValidatingEventListener.beforeInsert(ValidatingEventListener.java:61)
+	at org.grails.datastore.mapping.validation.ValidatingEventListener.onPersistenceEvent(ValidatingEventListener.java:48)
+	at org.grails.datastore.mapping.engine.event.AbstractPersistenceEventListener.onApplicationEvent(AbstractPersistenceEventListener.java:47)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.grails.datastore.mapping.engine.EntityPersister.cancelInsert(EntityPersister.java:253)
+	at org.grails.datastore.mapping.engine.NativeEntryEntityPersister.executeInsert(NativeEntryEntityPersister.java:1629)
+	at org.grails.datastore.mapping.engine.NativeEntryEntityPersister$1.run(NativeEntryEntityPersister.java:850)
+	at org.grails.datastore.mapping.core.impl.PendingOperationExecution.executePendingOperation(PendingOperationExecution.java:33)
+	at org.grails.datastore.mapping.core.AbstractSession.flushPendingOperations(AbstractSession.java:366)
+	at org.grails.datastore.mapping.core.AbstractSession.flushPendingInserts(AbstractSession.java:358)
+	at org.grails.datastore.mapping.core.AbstractSession.flush(AbstractSession.java:262)
+	at org.grails.datastore.gorm.GormInstanceApi.doSave(GormInstanceApi.groovy:197)
+	at org.grails.datastore.gorm.GormInstanceApi.save_closure5(GormInstanceApi.groovy:162)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at org.grails.datastore.mapping.core.DatastoreUtils.execute(DatastoreUtils.java:302)
+	at org.grails.datastore.gorm.AbstractDatastoreApi.execute(AbstractDatastoreApi.groovy:37)
+	at org.grails.datastore.gorm.GormInstanceApi.save(GormInstanceApi.groovy:161)
+	at org.strotmann.fragDenIng.ExperteControllerSpec.Test that the delete action deletes an instance if it exists(ExperteControllerSpec.groovy:139)
+Caused by: java.lang.reflect.InvocationTargetException
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.springframework.beans.BeanWrapperImpl.getPropertyValue(BeanWrapperImpl.java:760)
+Caused by: org.codehaus.groovy.grails.web.json.JSONException: A JSONArray text must start with &apos;[&apos; at character 1 of &lt;!DOCTYPE html&gt;
+&lt;!--[if lt IE 7 ]&gt; &lt;html lang=&quot;en&quot; class=&quot;no-js ie6&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 7 ]&gt;    &lt;html lang=&quot;en&quot; class=&quot;no-js ie7&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8 ]&gt;    &lt;html lang=&quot;en&quot; class=&quot;no-js ie8&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 9 ]&gt;    &lt;html lang=&quot;en&quot; class=&quot;no-js ie9&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if (gt IE 9)|!(IE)]&gt;&lt;!--&gt; &lt;html lang=&quot;en&quot; class=&quot;no-js&quot;&gt;&lt;!--&lt;![endif]--&gt;
+	&lt;head&gt;
+		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+		&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt;
+		&lt;title&gt;Error&lt;/title&gt;
+		&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+		&lt;link rel=&quot;shortcut icon&quot; href=&quot;/Partner-0.1/assets/favicon-9ef27019cc7a636e29ecc851528f716e.ico&quot; type=&quot;image/x-icon&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon&quot; href=&quot;/Partner-0.1/assets/apple-touch-icon-c915103363017d14cea9c2a46ea12166.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;114x114&quot; href=&quot;/Partner-0.1/assets/apple-touch-icon-retina-21d524e96ee946f16c9b8fb4ea0c3f6e.png&quot;&gt;
+  		&lt;link rel=&quot;stylesheet&quot; href=&quot;/Partner-0.1/assets/application-f0eb3dfdfbf1931cef7e6807a9ac7f49.css&quot;/&gt;
+		&lt;script src=&quot;/Partner-0.1/assets/application-837d5979e4ef3797bbaa42629ea278e3.js&quot; type=&quot;text/javascript&quot; &gt;&lt;/script&gt;
+		
+		
+		&lt;meta name=&quot;layout&quot; content=&quot;main&quot;&gt;
+		
+	
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div id=&quot;grailsLogo&quot; role=&quot;banner&quot;&gt;&lt;a href=&quot;http://grails.org&quot;&gt;&lt;img src=&quot;/Partner-0.1/assets/pLogo-6a260670686365d33639c2e0cf9464c4.png&quot; alt=&quot;Grails&quot;/&gt;&lt;/a&gt;&lt;/div&gt;
+		
+		
+			&lt;ul class=&quot;errors&quot;&gt;
+				&lt;li&gt;An error has occurred&lt;/li&gt;
+			&lt;/ul&gt;
+		
+	
+		&lt;div class=&quot;footer&quot; role=&quot;contentinfo&quot;&gt;&lt;/div&gt;
+		&lt;div id=&quot;spinner&quot; class=&quot;spinner&quot; style=&quot;display:none;&quot;&gt;Loading&amp;hellip;&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+	at org.codehaus.groovy.grails.web.json.JSONTokener.syntaxError(JSONTokener.java:470)
+	at org.codehaus.groovy.grails.web.json.JSONArray.&lt;init&gt;(JSONArray.java:108)
+	at org.codehaus.groovy.grails.web.json.JSONArray.&lt;init&gt;(JSONArray.java:148)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrConstructorNewInstance(ReflectiveInterceptor.java:1002)
+	at org.strotmann.partner.adapter.Partner.getPartner(Partner.groovy:67)
+	at org.strotmann.fragDenIng.Experte.getPartnerId(Experte.groovy:45)
+</error>
+  </testcase>
+  <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+[:]
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+  <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+</testsuite>
