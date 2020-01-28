@@ -22,7 +22,7 @@ class TeilnehmerController {
 			}
 		}
 		else {
-			flash.message = "Teilnehmer unbekannt"
+			flash.message = "Teilnehmer unbekannt, Sie können sich registrieren"
 			flash.name = params.name
 			render(view: "login")
 		}
