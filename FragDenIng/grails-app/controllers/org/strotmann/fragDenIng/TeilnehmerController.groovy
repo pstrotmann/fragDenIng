@@ -14,7 +14,10 @@ class TeilnehmerController {
 		if (u) {
 			if (u.passwort == params.passwort) {
 				session.user = u
-				redirect(uri: "/frage/create", params: [lang: u.sprache, text:session.vorabfrage?:' '])
+				if (u instanceof Fragesteller)
+					redirect(uri: "/frage/create", params: [lang: u.sprache, text:session.vorabfrage?:' '])
+				else
+					redirect(uri: "/angebot/create", params: [lang: u.sprache])
 			}
 			else {
 				flash.message = "Passwort falsch"
