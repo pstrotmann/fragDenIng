@@ -20,5 +20,12 @@ class SecurityFilters {
 				}
 			}
 		}
+		loginCheck(controller: 'user', action: 'login', invert: true) {
+			before = {
+				if (!session.masterUser && actionName != "login") {
+					redirect(controller: "user", action: "login")
+				}
+			}
+		}
     }
 }
