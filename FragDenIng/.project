@@ -26,7 +26,7 @@
 		<link>
 			<name>.link_to_grails_plugins</name>
 			<type>2</type>
-			<location>/home/peter/workspaces/fragDenIng/FragDenIng/target/work/plugins</location>
+			<location>/home/peter/git/fragDenIng/FragDenIng/target/work/plugins</location>
 		</link>
 	</linkedResources>
 </projectDescription>
