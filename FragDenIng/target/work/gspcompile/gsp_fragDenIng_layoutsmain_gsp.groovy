@@ -49,18 +49,30 @@ invokeTag('image','asset',20,['src':("grails_logo.png"),'alt':("Grails")],-1)
 printHtmlPart(8)
 invokeTag('layoutBody','g',21,[:],-1)
 printHtmlPart(9)
-invokeTag('message','g',23,['code':("spinner.alt"),'default':("Loading&hellip;")],-1)
-printHtmlPart(10)
-})
-invokeTag('captureBody','sitemesh',24,[:],1)
+createClosureForHtmlPart(10, 2)
+invokeTag('link','g',26,['controller':("content"),'action':("impressum")],2)
 printHtmlPart(11)
+createClosureForHtmlPart(12, 2)
+invokeTag('link','g',29,['controller':("content"),'action':("widerrufsbelehrung")],2)
+printHtmlPart(11)
+createClosureForHtmlPart(13, 2)
+invokeTag('link','g',32,['controller':("content"),'action':("agb")],2)
+printHtmlPart(11)
+createClosureForHtmlPart(14, 2)
+invokeTag('link','g',35,['controller':("content"),'action':("datenschutz")],2)
+printHtmlPart(15)
+invokeTag('message','g',40,['code':("spinner.alt"),'default':("Loading&hellip;")],-1)
+printHtmlPart(16)
+})
+invokeTag('captureBody','sitemesh',41,[:],1)
+printHtmlPart(17)
 }
 public static final Map JSP_TAGS = new HashMap()
 protected void init() {
 	this.jspTags = JSP_TAGS
 }
 public static final String CONTENT_TYPE = 'text/html;charset=UTF-8'
-public static final long LAST_MODIFIED = 1580146500000L
+public static final long LAST_MODIFIED = 1580298251000L
 public static final String EXPRESSION_CODEC = 'html'
 public static final String STATIC_CODEC = 'none'
 public static final String OUT_CODEC = 'html'

@@ -112,7 +112,7 @@
 			<p>Sie stellen ihre Projektanfrage kostenlos und unverbindlich an unsere 100% geprüften Ingenieure.<br>
 				Sie erhalten eine kostenfreie Erstberatung und ein unverbindliches Angebot zur Bearbeitung ihres Projektes von den Ingenieurexperten.<br>
 				Ihr Projekt wird online inklusive modernstem Projektmanagement abgewickelt, jederzeit transparent und einsichtig.<br>
-				Keine unnötigen vor-Ort Meetings, kein Papierkrieg, nur effiziente und kompetente Ingenieurskunst! Das ist <span style="color: rgb(72, 128, 44);">www.ask-an-engineer.com</span><br></p>
+				Keine unnötigen vor-Ort Meetings, kein Papierkrieg, nur effiziente und kompetente Ingenieurskunst! Das ist <span style="color: rgb(72, 128, 44);"><g:link controller="content" action="soFunktioniert">www.ask-an-engineer.com</g:link></span><br></p>
 		</div>
 		<div>
 			<g:form name="myForm" url="[controller:'vorabfrage']">

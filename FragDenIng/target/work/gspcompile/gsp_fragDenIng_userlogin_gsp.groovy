@@ -34,7 +34,7 @@ createTagBody(1, {->
 printHtmlPart(3)
 invokeTag('message','g',10,['code':("default.link.skip.label"),'default':("Skip to content&hellip;")],-1)
 printHtmlPart(4)
-invokeTag('message','g',14,['code':("default.login.label"),'args':([entityName])],-1)
+invokeTag('message','g',14,['code':("default.login.label"),'args':([entityName]),'default':("Entwickler-Einstieg")],-1)
 printHtmlPart(5)
 if(true && (flash.message)) {
 printHtmlPart(6)
@@ -82,7 +82,7 @@ protected void init() {
 	this.jspTags = JSP_TAGS
 }
 public static final String CONTENT_TYPE = 'text/html;charset=UTF-8'
-public static final long LAST_MODIFIED = 1580242546000L
+public static final long LAST_MODIFIED = 1580302591000L
 public static final String EXPRESSION_CODEC = 'html'
 public static final String STATIC_CODEC = 'none'
 public static final String OUT_CODEC = 'html'

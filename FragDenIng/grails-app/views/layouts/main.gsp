@@ -19,7 +19,24 @@
 	<body>
 		<div id="grailsLogo" role="banner"><a href="http://grails.org"><asset:image src="grails_logo.png" alt="Grails"/></a></div>
 		<g:layoutBody/>
-		<div class="footer" role="contentinfo">Impressum...</div>
+		<div class="footer" role="contentinfo">
+			<table>
+				<tr>
+					<td>
+						<g:link controller="content" action="impressum">Impressum</g:link>
+					</td>
+					<td>
+						<g:link controller="content" action="widerrufsbelehrung">Widerrufsbelehrung</g:link>
+					</td>
+					<td>
+						<g:link controller="content" action="agb">AGB</g:link>
+					</td>
+					<td>
+						<g:link controller="content" action="datenschutz">Datenschutz</g:link>
+					</td>
+				</tr>
+			</table>	
+		</div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
 	</body>
 </html>
